@@ -1,0 +1,1 @@
+export * from './auth.dto'; //Barren export pattern
