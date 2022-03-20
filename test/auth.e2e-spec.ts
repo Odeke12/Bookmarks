@@ -13,7 +13,9 @@ describe('UserController (e2e)', () => {
     let app: INestApplication
     let prisma: PrismaService
     let access_token: string
+    jest.setTimeout(10000)
     beforeAll(async() => {
+
         const moduleFixture: TestingModule = await Test.createTestingModule({
             imports: [AppModule]
         }).compile()
@@ -66,7 +68,6 @@ describe('UserController (e2e)', () => {
         .expect(200)
         .send(dto)
         .then(res => {
-            console.log(res)
             access_token = res.body.access_token
         })
         })
