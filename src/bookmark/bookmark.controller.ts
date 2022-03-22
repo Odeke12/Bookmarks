@@ -5,6 +5,9 @@ import { BookmarkService } from './bookmark.service';
 import { GetUser } from './decorator';
 import { Controller, Delete, Get, Param, Patch, Post, UseGuards } from '@nestjs/common';
 import { JwtGuard } from '../auth/guard'
+
+import { GetUser } from './decorator';
+
 import { STATUS_CODES } from 'http';
 
 @UseGuards(JwtGuard)
