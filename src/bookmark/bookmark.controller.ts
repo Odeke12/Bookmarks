@@ -2,9 +2,9 @@ import { EditBookmark } from './dto/edit-bookmark.dto';
 import { createBookmarkDto } from './dto/create-bookmark.dto';
 import { Body, ParseIntPipe } from '@nestjs/common';
 import { BookmarkService } from './bookmark.service';
+import { GetUser } from './decorator';
 import { Controller, Delete, Get, Param, Patch, Post, UseGuards } from '@nestjs/common';
 import { JwtGuard } from '../auth/guard'
-import { GetUser } from 'src/auth/decorator';
 import { STATUS_CODES } from 'http';
 
 @UseGuards(JwtGuard)
