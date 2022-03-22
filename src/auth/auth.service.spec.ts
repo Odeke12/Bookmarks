@@ -44,7 +44,7 @@ describe('Auth service', () => {
                email: 'timoodong@gmail.com',
                password: 'timothy'
            }
-           const token = await service.signup(dto)
+        //    const token = await service.signup(dto)
 
         //   expect(token).toEqual({
         //     access_token: expect.any(String),
