@@ -41,8 +41,8 @@ describe('Auth service', () => {
     describe('Check connection',() => {
         it('Should sign up a new user',async() => {
            const dto:AuthDto = {
-               email: 'anguloodeke@gmail.com',
-               password: 'angulo'
+               email: 'timoodong@gmail.com',
+               password: 'timothy'
            }
            const token = await service.signup(dto)
 
