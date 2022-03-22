@@ -4,7 +4,7 @@ import { Body, ParseIntPipe } from '@nestjs/common';
 import { BookmarkService } from './bookmark.service';
 import { Controller, Delete, Get, Param, Patch, Post, UseGuards } from '@nestjs/common';
 import { JwtGuard } from '../auth/guard'
-import { GetUser } from 'src/auth/decorator';
+import { GetUser } from './decorator';
 import { STATUS_CODES } from 'http';
 
 @UseGuards(JwtGuard)
